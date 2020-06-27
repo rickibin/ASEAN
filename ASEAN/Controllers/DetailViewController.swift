@@ -55,5 +55,11 @@ extension DetailViewController: UICollectionViewDelegate, UICollectionViewDataSo
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let vc = PreviewViewController()
+        vc.photos = photos
+        vc.selectedIndex = indexPath.row
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
     
 }

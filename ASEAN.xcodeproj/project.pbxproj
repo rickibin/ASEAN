@@ -23,6 +23,8 @@
 		09FD511E24A6EF3800ACEFD7 /* GalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FD511D24A6EF3800ACEFD7 /* GalleryCollectionViewCell.swift */; };
 		09FD512024A708C100ACEFD7 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FD511F24A708C100ACEFD7 /* Country.swift */; };
 		09FD512224A70A1600ACEFD7 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FD512124A70A1600ACEFD7 /* DataManager.swift */; };
+		09FD512424A71EEE00ACEFD7 /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FD512324A71EEE00ACEFD7 /* PreviewView.swift */; };
+		09FD512624A7282100ACEFD7 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FD512524A7282100ACEFD7 /* PreviewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		09FD511D24A6EF3800ACEFD7 /* GalleryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewCell.swift; sourceTree = "<group>"; };
 		09FD511F24A708C100ACEFD7 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		09FD512124A70A1600ACEFD7 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		09FD512324A71EEE00ACEFD7 /* PreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
+		09FD512524A7282100ACEFD7 /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,7 @@
 			children = (
 				09FD510F24A6DFD500ACEFD7 /* AseanTableViewController.swift */,
 				09FD511924A6E77D00ACEFD7 /* DetailViewController.swift */,
+				09FD512524A7282100ACEFD7 /* PreviewViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -106,6 +111,7 @@
 				09FD511324A6E07C00ACEFD7 /* AseanTableViewCell.swift */,
 				09FD511724A6E68500ACEFD7 /* DetailView.swift */,
 				09FD511D24A6EF3800ACEFD7 /* GalleryCollectionViewCell.swift */,
+				09FD512324A71EEE00ACEFD7 /* PreviewView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -216,7 +222,9 @@
 				09FD511024A6DFD500ACEFD7 /* AseanTableViewController.swift in Sources */,
 				09B5FE0824A6DEBD0054DE24 /* View.swift in Sources */,
 				09B5FDEF24A6DE550054DE24 /* AppDelegate.swift in Sources */,
+				09FD512624A7282100ACEFD7 /* PreviewViewController.swift in Sources */,
 				09FD511424A6E07C00ACEFD7 /* AseanTableViewCell.swift in Sources */,
+				09FD512424A71EEE00ACEFD7 /* PreviewView.swift in Sources */,
 				09FD511E24A6EF3800ACEFD7 /* GalleryCollectionViewCell.swift in Sources */,
 				09B5FDF124A6DE550054DE24 /* SceneDelegate.swift in Sources */,
 				09FD512224A70A1600ACEFD7 /* DataManager.swift in Sources */,
