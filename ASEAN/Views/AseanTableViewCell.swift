@@ -163,7 +163,7 @@ class AseanTableViewCell: UITableViewCell {
             UIView.animate(withDuration: 0.1) {
                 self.shadowView.transform = CGAffineTransform(scaleX: 0.97, y: 0.98)
                 self.roundView.transform = CGAffineTransform(scaleX: 0.97, y: 0.98)
-                self.roundView.backgroundColor = .lightGray
+                self.roundView.backgroundColor = UIColor(red: 0.9, green: 0.9, blue: 0.9, alpha: 1)
             }
             
         }

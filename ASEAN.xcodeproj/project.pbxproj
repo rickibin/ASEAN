@@ -25,6 +25,8 @@
 		09FD512224A70A1600ACEFD7 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FD512124A70A1600ACEFD7 /* DataManager.swift */; };
 		09FD512424A71EEE00ACEFD7 /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FD512324A71EEE00ACEFD7 /* PreviewView.swift */; };
 		09FD512624A7282100ACEFD7 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FD512524A7282100ACEFD7 /* PreviewViewController.swift */; };
+		09FD512824A72F7B00ACEFD7 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FD512724A72F7B00ACEFD7 /* ProfileView.swift */; };
+		09FD512A24A736F400ACEFD7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FD512924A736F400ACEFD7 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,8 @@
 		09FD512124A70A1600ACEFD7 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		09FD512324A71EEE00ACEFD7 /* PreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
 		09FD512524A7282100ACEFD7 /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
+		09FD512724A72F7B00ACEFD7 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		09FD512924A736F400ACEFD7 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,7 @@
 				09FD510F24A6DFD500ACEFD7 /* AseanTableViewController.swift */,
 				09FD511924A6E77D00ACEFD7 /* DetailViewController.swift */,
 				09FD512524A7282100ACEFD7 /* PreviewViewController.swift */,
+				09FD512924A736F400ACEFD7 /* ProfileViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -112,6 +117,7 @@
 				09FD511724A6E68500ACEFD7 /* DetailView.swift */,
 				09FD511D24A6EF3800ACEFD7 /* GalleryCollectionViewCell.swift */,
 				09FD512324A71EEE00ACEFD7 /* PreviewView.swift */,
+				09FD512724A72F7B00ACEFD7 /* ProfileView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -221,7 +227,9 @@
 				09FD512024A708C100ACEFD7 /* Country.swift in Sources */,
 				09FD511024A6DFD500ACEFD7 /* AseanTableViewController.swift in Sources */,
 				09B5FE0824A6DEBD0054DE24 /* View.swift in Sources */,
+				09FD512A24A736F400ACEFD7 /* ProfileViewController.swift in Sources */,
 				09B5FDEF24A6DE550054DE24 /* AppDelegate.swift in Sources */,
+				09FD512824A72F7B00ACEFD7 /* ProfileView.swift in Sources */,
 				09FD512624A7282100ACEFD7 /* PreviewViewController.swift in Sources */,
 				09FD511424A6E07C00ACEFD7 /* AseanTableViewCell.swift in Sources */,
 				09FD512424A71EEE00ACEFD7 /* PreviewView.swift in Sources */,

@@ -15,7 +15,7 @@ class AseanTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationItem.rightBarButtonItem = .init(barButtonSystemItem: .add, target: self, action: nil)
+        self.navigationItem.rightBarButtonItem = .init(image: UIImage(named: "ProfileButton")?.withRenderingMode(.alwaysTemplate), style: .plain, target: self, action: #selector(profileBarButtonTapped(_:)))
         self.title = "Asean"
         tableView.backgroundColor = UIColor(red: 245/255, green: 245/255, blue: 245/255, alpha: 1)
         
@@ -35,6 +35,12 @@ class AseanTableViewController: UITableViewController {
         
         // Set navbar color
         setNavBarColor(self, backgroundColor: UIColor(named: "GreenBase"), textColor: .white, tintColor: .white)
+    }
+    
+    // MARK: - Button Action
+    @objc func profileBarButtonTapped(_ button: UIBarButtonItem) {
+        let vc = ProfileViewController()
+        navigationController?.pushViewController(vc, animated: true)
     }
 
     // MARK: - Table view data source
