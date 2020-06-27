@@ -142,6 +142,7 @@ class DetailView: View {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textColor = .black
         label.font = .systemFont(ofSize: 14, weight: .light)
+        label.numberOfLines = 0
         label.text = "Semboyan"
         
         return label
@@ -162,6 +163,7 @@ class DetailView: View {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textColor = .black
         label.font = .systemFont(ofSize: 14, weight: .light)
+        label.numberOfLines = 0
         label.text = "Lagu"
         
         return label
@@ -295,12 +297,14 @@ class DetailView: View {
             
             semboyanLabel.topAnchor.constraint(equalTo: semboyanHeadLabel.bottomAnchor, constant: 8),
             semboyanLabel.leftAnchor.constraint(equalTo: containerView.leftAnchor, constant: 30),
+            semboyanLabel.rightAnchor.constraint(equalTo: containerView.rightAnchor, constant: -20),
             
             nationalAnthemHeadLabel.topAnchor.constraint(equalTo: semboyanLabel.bottomAnchor, constant: 18),
             nationalAnthemHeadLabel.leftAnchor.constraint(equalTo: containerView.leftAnchor, constant: 20),
             
             nationalAnthemLabel.topAnchor.constraint(equalTo: nationalAnthemHeadLabel.bottomAnchor, constant: 8),
             nationalAnthemLabel.leftAnchor.constraint(equalTo: containerView.leftAnchor, constant: 30),
+            nationalAnthemLabel.rightAnchor.constraint(equalTo: containerView.rightAnchor, constant: -20),
             
             languageHeadLabel.topAnchor.constraint(equalTo: nationalAnthemLabel.bottomAnchor, constant: 18),
             languageHeadLabel.leftAnchor.constraint(equalTo: containerView.leftAnchor, constant: 20),
