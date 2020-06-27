@@ -79,8 +79,6 @@ class AseanTableViewCell: UITableViewCell {
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.contentMode = .scaleAspectFit
         imageView.clipsToBounds = true
-        imageView.layer.borderColor = UIColor.gray.cgColor
-        imageView.layer.borderWidth = 0.3
         imageView.image = UIImage(named: "SingapuraFlag")
         
         return imageView
@@ -103,6 +101,7 @@ class AseanTableViewCell: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         backgroundColor = UIColor(red: 245/255, green: 245/255, blue: 245/255, alpha: 1)
+        selectionStyle = .none
         contentView.addSubview(shadowView)
         contentView.addSubview(roundView)
         roundView.addSubview(photosImageView)
@@ -157,9 +156,25 @@ class AseanTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-        print("Selected", self.isSelected)
+    
+    override func setHighlighted(_ highlighted: Bool, animated: Bool) {
+        super.setHighlighted(highlighted, animated: true)
+        if highlighted {
+            UIView.animate(withDuration: 0.1) {
+                self.shadowView.transform = CGAffineTransform(scaleX: 0.97, y: 0.98)
+                self.roundView.transform = CGAffineTransform(scaleX: 0.97, y: 0.98)
+                self.roundView.backgroundColor = .lightGray
+            }
+            
+        }
+        else {
+            UIView.animate(withDuration: 0.1) {
+                self.shadowView.transform = CGAffineTransform(scaleX: 1, y: 1)
+                self.roundView.transform = CGAffineTransform(scaleX: 1, y: 1)
+                self.roundView.backgroundColor = .white
+            }
+        }
+        
     }
 
 }
